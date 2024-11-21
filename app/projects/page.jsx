@@ -41,7 +41,7 @@ const work = [
   },
   {
     num: "04",
-    category: "Coachine consultation (Stowford United)",
+    category: "Coaching consultation (Stowford United)",
     title: "",
     description: "Future Athlete partnered with Stowford United on a coaching consultation project aimed at enhancing their training and development strategies through data-driven insights. By analyzing detailed performance data from matches and training sessions, Future Athlete helped the coaching department identify key areas for improvement and opportunities to optimize player development. This collaboration led to the implementation of tailored, data-backed training plans, significantly improving efficiency in session planning and decision-making. The result was a more focused approach to player progress and enhanced overall team performance.",
     image: "/Stowford-2.svg"
