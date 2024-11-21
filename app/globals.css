@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white;
+  }
+  .h1 {
+    @apply text-[32px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[24px] xl:text-[32px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold mb-2;
+  }
+}
+
+@layer utilities {
+  .outlined-text {
+    color: #03635D; /* Text color */
+    -webkit-text-stroke: 1px white; /* Stroke thickness and color */
+    -webkit-text-fill-color: #03635D; /* Fills inner text */
+  }
+}
