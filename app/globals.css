@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 
-@layer base {
-  body {
-    @apply font-primary bg-primary text-white;
+@tailwind base {
+  html, body {
+    height: 100%;
+    margin: 0;
   }
+
+  body
   .h1 {
     @apply text-[32px] xl:text-[48px] leading-[1.1] font-semibold;
   }
@@ -24,4 +27,8 @@
     -webkit-text-stroke: 1px white; /* Stroke thickness and color */
     -webkit-text-fill-color: #03635D; /* Fills inner text */
   }
+}
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
 }

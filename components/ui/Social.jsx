@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const social = [
-{icon: <FaInstagram/>, path: ""},
+{icon: <FaInstagram/>, path: "www.instagram.com/danielweeks_"},
 {icon: <FaFacebookF/>, path: ""},
 {icon: <FaLinkedinIn/>, path: ""},
 {icon: <FaTwitter />, path: "" },

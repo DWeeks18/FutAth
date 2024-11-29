@@ -82,17 +82,17 @@ const Testimonials = () => {
               </div>
               {/* Text Section */}
               <div className="w-full md:w-1/2 flex flex-col gap-4 flex-grow">
-                <h2 className="text-xl font-extrabold text-[#03635D] underline underline-offset-8">
+                <h2 className="text-2xl font-primary font-extrabold text-primary underline underline-offset-8">
                   {service.title}
                 </h2>
                 {/* Description with Expandable Option */}
-                <p className = "text-white">
+                <p className = "text-accent roboto-font">
                   {expanded[index]
                     ? service.description
                     : `${service.description.slice(0, 150)}...`}{" "}
                   <button
                     onClick={() => toggleExpand(index)}
-                    className="text-[#03635D] hover:underline ml-2"
+                    className="text-priamry hover:underline ml-2"
                   >
                     {expanded[index] ? "Show Less" : "Read More"}
                   </button>

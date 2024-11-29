@@ -47,7 +47,7 @@ const Services = () => {
       >
         {services.map((service, index) => {
           return (
-          <div key = {index} className = "flex-1 flex flex-col justify-center gap-6 group h-full">
+          <div key = {index} className = "flex-1 flex flex-col justify-center gap-6 group h-full text-accent">
             {/* top */}
             <div>
               <div>{service.num}</div>
@@ -56,13 +56,13 @@ const Services = () => {
             </Link>
           </div>
           {/* title */}
-          <h2 className = "text-xl font-extrabold underline underline-offset-8 text-[#03635D]">
+          <h2 className = "font-primary text-xl font-extrabold underline underline-offset-8 text-primary">
             {service.title}
             </h2>
           {/* description */}
-          <p>{service.description}</p>
+          <p className = "roboto-font font-[700] text-accent">{service.description}</p>
           {/* border */}
-          <div className = "border-b border-white/20 w-full"></div>
+          <div className = "border-b border-white/40 w-full"></div>
           </div>
         );
         })}

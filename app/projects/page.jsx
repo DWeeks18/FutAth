@@ -70,14 +70,14 @@ const Projects = () => {
         <div className = "w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
           <div className = "flex flex-col gap-[15px] h-[50%]">
             {/* outline num */}
-            <div className = "text-4xl leading-none font-semibold text-white">
+            <div className = "font-primary text-4xl leading-none font-semibold text-white">
               {Selectedwork.num}
             </div>
             {/* Project Cat */}
-            <h2 className = "text-[42px] font-extrabold leading-none text-[#03635D] group-hover:text-primary transition-all duration-500 capitalize">{Selectedwork.category}
+            <h2 className = "font-primary text-[42px] font-extrabold leading-none text-[#03635D] group-hover:text-primary transition-all duration-500 capitalize">{Selectedwork.category}
             </h2>
             {/* Project Description */}
-            <p className = "text-white font-semibold">{Selectedwork.description}</p>
+            <p className = "text-white font-semibold roboto-font">{Selectedwork.description}</p>
             {/* border */}
             <div className = "border border-white/40"></div>
           </div>
@@ -104,7 +104,7 @@ const Projects = () => {
               </SwiperSlide>
             })}
             {/* slider buttons */}
-            <WorkSliderBtns containerStyles= "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles = "bg-accent hover:bg-accent-hover text-black text-[22px] w-[44px] flex justify-center items-center transition-all" />
+            <WorkSliderBtns containerStyles= "flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles = "bg-black text-white hover:bg-white hover:text-black text-[22px] w-[44px] flex justify-center items-center transition-all" />
           </Swiper>
         </div>
       </div>
