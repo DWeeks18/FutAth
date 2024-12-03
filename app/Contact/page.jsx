@@ -1,8 +1,8 @@
 "use client";
 
-import {Button} from "@/components/ui/button";
-import {Input} from "@/components/ui/input";
-import {Textarea} from "@/components/ui/textarea";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Textarea } from "@/components/ui/Textarea";
 
 import {
     Select,
@@ -43,7 +43,7 @@ const Contact = () => {
         e.preventDefault(); 
         
         try {
-            const res = await fetch ("/api/contact", {
+            const res = await fetch ("/pages/api", {
                 method: "POST",
                 body: JSON.stringify({
                     firstName,

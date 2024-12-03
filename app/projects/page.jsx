@@ -11,7 +11,7 @@ Tooltip,
 TooltipContent,
 TooltipProvider,
 TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@/components/ui/Tooltip";
 
 import Link from "next/link";
 import Image from "next/image";

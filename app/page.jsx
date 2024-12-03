@@ -1,6 +1,6 @@
 import React from "react";
 import { FiDownload } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import Photo from "@/components/ui/Photo";
 import Social from "@/components/ui/Social";
 
@@ -15,7 +15,7 @@ const Home = () => {
         </div>
           {/* text */}
           <div className = "text-center xl:text-left">
-            <span className = "h3 roboto-font font-light text-accent">Welcome to Future Athlete</span>
+            <span className = "h3 text-2xl roboto-font font-light text-accent">Welcome to Future Athlete</span>
             <h1 className = "h1 mb-2 mt-1 text-primary font-roboto font-bold text-5xl">
              Where data meets performance to unlock your full athletic potential
             </h1>
