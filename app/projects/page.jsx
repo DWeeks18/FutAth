@@ -74,7 +74,7 @@ const Projects = () => {
               {Selectedwork.num}
             </div>
             {/* Project Cat */}
-            <h2 className = "font-primary text-[42px] font-extrabold leading-none text-[#03635D] group-hover:text-primary transition-all duration-500 capitalize">{Selectedwork.category}
+            <h2 className = "font-primary text-[42px] font-extrabold leading-none text-primary group-hover:text-primary transition-all duration-500 capitalize">{Selectedwork.category}
             </h2>
             {/* Project Description */}
             <p className = "text-white font-semibold roboto-font">{Selectedwork.description}</p>
@@ -91,7 +91,7 @@ const Projects = () => {
               return <SwiperSlide key = {index} className = "w-full">
                 <div className = "h-[460px] relative group flex justify-center items-center bg-pink-50">
                   {/* overlay */}
-                  <div className = "absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 border-4 border-[#03635D]"></div>
+                  <div className = "absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 border-4 border-primary"></div>
                   {/* Image */}
                   <div className = "relative w-full h-full">
                     <Image 

@@ -3,24 +3,6 @@
 @tailwind utilities;
 
 
-@tailwind base {
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-  body
-  .h1 {
-    @apply text-[32px] xl:text-[48px] leading-[1.1] font-semibold;
-  }
-  .h2 {
-    @apply text-[24px] xl:text-[32px] leading-[1.1] font-semibold;
-  }
-  .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold mb-2;
-  }
-}
-
 @layer utilities {
   .outlined-text {
     color: #03635D; /* Text color */

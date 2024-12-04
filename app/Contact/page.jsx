@@ -31,6 +31,7 @@ const info = [
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { sendEmail } from "@/lib/contact";
 
 const Contact = () => {
     const [firstName, setFirstName] = useState('');
@@ -42,32 +43,8 @@ const Contact = () => {
     const onSubmit = async (e) => {
         e.preventDefault(); 
         
-        try {
-            const res = await fetch ("/pages/api", {
-                method: "POST",
-                body: JSON.stringify({
-                    firstName,
-                    lastName,
-                    email,
-                    selectedService,
-                    message,
-                }),
-                headers: {
-                    'content-type': 'application/json',
-                },
-            });
-
-            const data = await res.json(); //get response data
-            if (res.ok) {
-                console.log(data.message); // Log success message
-            } else {
-                console.error("Error sending email:", data); // Log error message
-            }
-        } catch (err) {
-            console.error("Error:", err);
-        }
-        // Handle form submission
-        console.log("Data", {firstName, lastName, email, message, selectedService});
+       await sendEmail();
+       console.log("FUCKING SHIT CODE MATE, it worked though ")
         
         // Reset form input
         setFirstName("");
