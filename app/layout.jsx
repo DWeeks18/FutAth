@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} bg-gradient-to-br from-black to-[#03635D] from-40% to-100%`}>
+      <body className={`${jetbrainsMono.variable} bg-gradient-to-br from-black to-primary from-40% to-100%`}>
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

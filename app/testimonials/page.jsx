@@ -92,14 +92,14 @@ const Testimonials = () => {
                     : `${service.description.slice(0, 150)}...`}{" "}
                   <button
                     onClick={() => toggleExpand(index)}
-                    className="text-priamry hover:underline ml-2"
+                    className="text-primary hover:underline ml-2"
                   >
                     {expanded[index] ? "Show Less" : "Read More"}
                   </button>
                 </p>
                 {service.href && (
                   <Link href={service.href}>
-                    <a className="text-[primary] hover:underline">Learn More</a>
+                    <a className="text-primary hover:underline">Learn More</a>
                   </Link>
                 )}
                 <div className="border-b border-white/40 w-full"></div>
