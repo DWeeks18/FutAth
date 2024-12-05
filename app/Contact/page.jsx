@@ -31,7 +31,7 @@ const info = [
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { sendEmail } from "@/lib/contact";
+import { name, sendEmail } from "@/lib/contact";
 
 const Contact = () => {
     const [firstName, setFirstName] = useState('');
@@ -43,8 +43,8 @@ const Contact = () => {
     const onSubmit = async (e) => {
         e.preventDefault(); 
         
-       await sendEmail();
-       console.log("FUCKING SHIT CODE MATE, it worked though ")
+       await sendEmail(firstName, lastName, email, selectedService, message);
+       console.log("Form Submission")
         
         // Reset form input
         setFirstName("");
@@ -85,10 +85,10 @@ const Contact = () => {
                         <SelectContent>
                             <SelectGroup className = "roboto-font">
                                 <SelectLabel>Select a service</SelectLabel>
-                                <SelectItem value = "Player_Analysis">Individual Player Performance Analysis</SelectItem>
-                                <SelectItem value = "Team_Analyis">Team Performance Analysis</SelectItem>
-                                <SelectItem value = "Player_Dev_Progs">Player Development Programs</SelectItem>
-                                <SelectItem value = "Coaching_Consult">Coaching Consutations</SelectItem>
+                                <SelectItem value = "Individual Player Performance Analysis">Individual Player Performance Analysis</SelectItem>
+                                <SelectItem value = "Team Performance Analysis">Team Performance Analysis</SelectItem>
+                                <SelectItem value = "Player Development Programs">Player Development Programs</SelectItem>
+                                <SelectItem value = "Coaching Consultations">Coaching Consutations</SelectItem>
                                 <SelectItem value = "Other">Other</SelectItem>
                             </SelectGroup>
                         </SelectContent>
